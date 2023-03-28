@@ -8,5 +8,5 @@ apt-get -y update
 apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 echo "$STRING" > /var/www/html/index.nginx-debian.html
-sed -i "37i\ $REDIRECT" "$FILE"
+sed -i "38i $REDIRECT" "$FILE"
 service nginx restart
